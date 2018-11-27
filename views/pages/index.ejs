@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+    <div class="container">
+        <div class="intro js-fade fade-in show">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="http://moneyconcepts.com/image/branchImage/4a700943-027a-4364-95ba-98244a304783"/>
+                    <button class="get_started">Let's Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="js-fade fade-in main_content hide">
+  <% include ../partials/nav.ejs %>
+
+<div class="container">
+  <h1>Genesis Financial</h1>
+  <h3>Personal Financial Planning Data Booklet</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <form method="post" action="/send">
+          <div id="surveyElement"></div>
+          <p id="surveyResult"></p>
+        </form>
+      </div>
+    </div>
+    <% include ../partials/progress.ejs %>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="survey.js"></script>
+</body>
+</html>
